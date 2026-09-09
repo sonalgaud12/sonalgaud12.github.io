@@ -13,7 +13,8 @@
   --text: #ededed;
   --text-dim: #8b8b93;
   --text-faint: #56565c;
-  --accent: #00acd7; /* Go cyan */
+  --accent: #00acd7;
+  /* Go cyan */
   --accent-dim: #00acd733;
 
   --font-display: "Space Grotesk", "Segoe UI", sans-serif;
@@ -24,12 +25,17 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background: var(--bg);
@@ -458,12 +464,15 @@ footer a:hover {
     grid-template-columns: 1fr;
     gap: 6px;
   }
+
   .nav-links {
     gap: 18px;
   }
+
   .hero {
     padding: 56px 0 40px;
   }
+
   .section-head {
     flex-direction: column;
     align-items: flex-start;
